@@ -14,6 +14,7 @@ def download_stock_data(csv_url):
     csv=response.read()
     # 转换为字符串
     csv_str=str(csv)
+    print(csv_str)
     # 分离分割线
     lines=csv_str.split("\\n")
     # 保存的文件
